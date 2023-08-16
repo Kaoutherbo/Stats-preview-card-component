@@ -36,11 +36,11 @@ body{
 }
 .card{
     width: 1050px;
-    height: 430px;
+    height: 460px;
     background-color: var(--Dark-desaturated-blue-card);
     display: flex;
     flex-direction: row;
-    border-radius: 8px;
+    border-radius: 9px;
     gap: 3.5rem;
 }
 .description{
@@ -52,10 +52,11 @@ body{
 }
 .image{
     background-image: url('./images/image-header-desktop.jpg');
-    width: 500px;
+    background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0 8px 8px 0;
-    height: 430px; 
+    width: 500px;
+    height: 460px;
+    border-radius: 0 9px 9px 0; 
     position: relative;
 }
 .color-hover{
@@ -63,8 +64,8 @@ body{
     top: 0;
     left: 0;
     width: 500px;
-    height: 430px;
-    border-radius: 0 8px 8px 0;
+    height: 460px;
+    border-radius: 0 9px 9px 0;
     background-color: var(--Soft-violet-accent);
     mix-blend-mode: multiply; 
     }
@@ -91,9 +92,12 @@ h4{
     font-size: 23px;
     font-weight: var(--Font-Weight);
 }
-.first > p,.second > p,.third > p{
+.companies > p,.templates > p,.queries > p{
     margin-top: 0.3rem;
     color: var(--Slightly-transparent-white-stat-headings);
+    text-transform: uppercase;
+}
+.queries > h4{
     text-transform: uppercase;
 }
 @media (max-width:650px) {
@@ -116,12 +120,12 @@ h4{
         background-image: url('./images/image-header-mobile.jpg');
         width: 100%;
         height: 275px;
-        border-radius: 8px 8px 0 0;
+        border-radius: 9px 9px 0 0;
     }
     .color-hover{
     width: 100%;
     height: 275px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 9px 9px 0 0;
  }
     .description{
         max-width: 100%;
@@ -131,9 +135,6 @@ h4{
         font-size: 1.8rem;
         width: 100%;
         margin: 0;
-    }
-    .description > p{
-        width: 100%;
     }
     article{
         display: flex;
