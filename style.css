@@ -54,7 +54,12 @@ body{
             color: var(--White-main-heading);
             width: 100%;
             font-size: 2.3rem;
+
+            & b{
+                color: var(--Soft-violet-accent);
+            }
         }
+        
         & p{
             color: var(--Slightly-transparent-white-stat-headings);
             line-height: 1.8rem;
@@ -71,7 +76,8 @@ body{
             position: relative;
         }
 
-        & .color-hover{
+        & .image::before{
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -89,19 +95,13 @@ body{
             gap: 4rem;
         }
         
-        
-       & b{
-            color: var(--Soft-violet-accent);
-        }
+       & .companies, & .templates, & .queries{
+            & h4{
+            color: var(--White-main-heading);
+            font-size: 23px;
+            font-weight: var(--Font-Weight);
+            }
 
-
-        &  h4{
-        color: var(--White-main-heading);
-        font-size: 23px;
-        font-weight: var(--Font-Weight);
-        }
-
-       & .companies, &.templates , & .queries{
             & p{
             margin-top: 0.3rem;
             color: var(--Slightly-transparent-white-stat-headings);
@@ -142,7 +142,7 @@ body{
             border-radius: 9px 9px 0 0;
         }
 
-        & .color-hover{
+        & .image::before{
         width: 100%;
         height: 275px;
         border-radius: 9px 9px 0 0;
@@ -151,7 +151,7 @@ body{
        & .description{
             max-width: 100%;
             padding: 2rem;
-            
+
             & h1{
                 font-size: 1.8rem;
                 width: 100%;
