@@ -97,15 +97,19 @@ h4{
     text-transform: uppercase;
 }
 @media (max-width:650px) {
+    body{
+        height: 100%;
+    }
     .card{
         width: 90%;
         flex-direction: column-reverse;
-        max-width :375px ;
         height: fit-content;
+        max-width: 375px;
         text-align: center;
         align-items: center;
         justify-content: center;
         gap: 0;
+        margin: 4rem 0;
     }
     
     .image{
